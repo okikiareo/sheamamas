@@ -1,0 +1,307 @@
+@media (max-width: 992px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+  .support-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .support-content {
+    padding-right: 0;
+  }
+
+  .support-content h2 {
+    font-size: 38px;
+  }
+
+  .action-boxes {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-box {
+    padding: 60px 30px;
+  }
+  .vm-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 600px;
+  }
+
+  .decorative-circle {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    right: -100px;
+  }
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .work-with-header h2 {
+    font-size: 36px;
+  }
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .events-content h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .image-frame {
+    border: 6px solid #f39c12;
+    box-shadow: 15px 15px 0 rgba(243, 156, 18, 0.2);
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+  .support-section {
+    padding: 60px 0;
+  }
+
+  .support-content h2 {
+    font-size: 32px;
+  }
+
+  .support-description {
+    font-size: 15px;
+  }
+  .impact-stats {
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-box {
+    padding: 50px 20px;
+  }
+
+  .stat-number {
+    font-size: 48px;
+  }
+
+  .stat-label {
+    font-size: 16px;
+  }
+
+  .scroll-top-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+  }
+  .vision-mission-section {
+    padding: 60px 0;
+  }
+
+  .vm-image {
+    height: 220px;
+  }
+
+  .vm-content {
+    padding: 25px 20px;
+  }
+
+  .vm-content h3 {
+    font-size: 22px;
+  }
+
+  .vm-content p {
+    font-size: 14px;
+  }
+
+  .decorative-circle {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+  }
+  .work-with-section {
+    padding: 60px 0;
+  }
+
+  .work-with-header {
+    margin-bottom: 50px;
+  }
+
+  .work-with-header h2 {
+    font-size: 30px;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .partner-card {
+    padding: 35px 25px;
+  }
+
+  .partner-card h3 {
+    font-size: 18px;
+    min-height: auto;
+  }
+
+  .partner-icon {
+    width: 85px;
+    height: 85px;
+  }
+
+  .partner-icon svg {
+    width: 48px;
+    height: 48px;
+  }
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-about {
+    grid-column: 1;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+
+  .map-pins {
+    display: none;
+  }
+  .support-grid {
+    flex-direction: column;
+  }
+  .support-content,
+  .action-boxes {
+    width: 100%;
+  }
+  .events-section {
+    padding: 40px 0;
+  }
+
+  .events-content h2 {
+    font-size: 32px;
+  }
+
+  .events-description {
+    font-size: 15px;
+  }
+
+  .events-image {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo-icon img {
+    width: 55px;
+  }
+  .hero {
+    margin-top: 70px;
+  }
+  .section-tag {
+    font-size: 16px;
+  }
+  .feature-text h4 {
+    font-size: 16px;
+  }
+  .support-section .container {
+    width: 95%;
+    padding: 0;
+  }
+  .action-box h3 {
+    font-size: 16px;
+  }
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+  .events-content h2 {
+    font-size: 20px;
+  }
+  .events-section .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-icon img {
+    width: 50px;
+  }
+  .stat-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+  .work-with-header h2 {
+    font-size: 23px;
+  }
+  .footer-logo .logo-text h3 {
+    font-size: 22px;
+  }
+  .scroll-top-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .action-box {
+    padding: 45px 30px;
+  }
+  .scroll-top-btn svg {
+    width: 16ox;
+    height: 16px;
+  }
+}
