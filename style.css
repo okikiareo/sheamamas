@@ -251,7 +251,7 @@ body {
 /* Slider Navigation */
 .slider-nav {
   position: absolute;
-  bottom: 40px;
+  bottom: 55px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
