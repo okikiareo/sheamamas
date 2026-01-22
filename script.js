@@ -110,23 +110,23 @@ class HeroSlider {
     tileArray.forEach((tile, index) => {
       setTimeout(() => {
         tile.style.opacity = "1";
-        tile.style.transition = "opacity 0.3s";
-      }, index * 30);
+        tile.style.transition = "opacity 0.2s";
+      }, index * 15);
     });
 
     setTimeout(() => {
       callback();
       setTimeout(() => {
         overlay.remove();
-      }, 100);
-    }, tileArray.length * 30 + 300);
+      }, 50);
+    }, tileArray.length * 15 + 200);
   }
 
   flipTransition(currentSlide, nextSlide, callback) {
     const currentBg = currentSlide.querySelector(".slide-background");
 
     currentBg.style.transition =
-      "transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)";
+      "transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1)";
     currentBg.style.transformOrigin = "center center";
     currentBg.style.transform = "perspective(1000px) rotateY(90deg)";
 
@@ -137,16 +137,16 @@ class HeroSlider {
 
       setTimeout(() => {
         nextSlide.querySelector(".slide-background").style.transition =
-          "transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1)";
+          "transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1)";
         nextSlide.querySelector(".slide-background").style.transform =
           "perspective(1000px) rotateY(0deg)";
-      }, 50);
+      }, 30);
 
       setTimeout(() => {
         currentBg.style.transform = "scale(1)";
         currentBg.style.transition = "";
-      }, 800);
-    }, 400);
+      }, 500);
+    }, 200);
   }
 
   tileTransition(currentSlide, nextSlide, callback) {
@@ -182,10 +182,10 @@ class HeroSlider {
     for (let i = 0; i < tiles.length; i++) {
       setTimeout(() => {
         tiles[i].style.transition =
-          "all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+          "all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
         tiles[i].style.transform = "translateY(0)";
         tiles[i].style.opacity = "1";
-      }, i * 20);
+      }, i * 10);
     }
 
     setTimeout(() => {
@@ -196,13 +196,13 @@ class HeroSlider {
         setTimeout(() => {
           tiles[i].style.transform = "translateY(-100%)";
           tiles[i].style.opacity = "0";
-        }, i * 15);
+        }, i * 10);
       }
 
       setTimeout(() => {
         overlay.remove();
-      }, tiles.length * 15 + 500);
-    }, tiles.length * 20 + 200);
+      }, tiles.length * 8 + 300);
+    }, tiles.length * 10 + 100);
   }
 
   restartTypingAnimation(slide) {
@@ -218,7 +218,7 @@ class HeroSlider {
   startAutoplay() {
     this.autoplayInterval = setInterval(() => {
       this.nextSlide();
-    }, 5000);
+    }, 4000);
   }
 
   stopAutoplay() {
