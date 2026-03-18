@@ -592,7 +592,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   gap: 0;
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&h=600&fit=crop");
+  background-image: url("/img/stats.jpg");
   background-size: cover;
   background-position: center;
 }
